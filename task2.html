@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-операції · Лабораторна №5</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>DOM-операції</h1>
+                <p>Лабораторна робота №5 · Варіант 3</p>
+                <p class="student">Галкіна Олександра Володимирівна · КН-32</p>
+            </div>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Головна</a>
+                <a href="task1.html" class="nav-link">01 / Іспити</a>
+                <a href="task2.html" class="nav-link active">02 / DOM-операції</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="dom-section">
+                <h2>Завдання 2.1 — Обрізання тексту</h2>
+                <p class="section-description">
+                    Обрізати текст у двох блоках div до 10 символів
+                    та додати три крапки.
+                </p>
+
+                <div class="text-blocks" id="textBlocks">
+                    <div class="text-item">
+                        JavaScript дозволяє створювати інтерактивні вебсторінки.
+                    </div>
+                    <div class="text-item">
+                        Об'єктна модель DOM забезпечує доступ до елементів HTML.
+                    </div>
+                </div>
+
+                <button type="button" class="action-button" id="cutButton">
+                    Обрізати текст
+                </button>
+            </section>
+
+            <section class="dom-section">
+                <h2>Завдання 2.2 — Сума стовпців</h2>
+                <p class="section-description">
+                    Обчислити суму чисел кожного стовпця
+                    та записати результати в останній рядок таблиці.
+                </p>
+
+                <div class="number-table-wrapper">
+                    <table class="number-table" id="numberTable">
+                        <tbody>
+                            <tr>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>15</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>14</td>
+                                <td>9</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>3</td>
+                                <td>18</td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="sum-row">
+                                <td>—</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <button type="button" class="action-button" id="sumButton">
+                    Обчислити суми
+                </button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

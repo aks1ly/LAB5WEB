@@ -1,0 +1,158 @@
+
+/* Розклад іспитів */
+
+.exam-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 12px 0 20px;
+}
+
+.exam-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.exam-controls label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.exam-controls input,
+.exam-controls button {
+    font-family: inherit;
+    font-size: 12px;
+    padding: 14px 18px;
+    border-radius: 10px;
+}
+
+.exam-controls input {
+    border: 1px solid #d5d5d9;
+    background-color: #ffffff;
+    color: #25262b;
+}
+
+.exam-controls button {
+    border: none;
+    background-color: #b72f3b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.exam-controls button:hover {
+    background-color: #962632;
+}
+
+/* Таблиця іспитів */
+
+.exam-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+.exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 12px;
+    text-align: left;
+}
+
+.exam-table th,
+.exam-table td {
+    padding: 20px;
+    border-bottom: 1px solid #e8e8eb;
+}
+
+.exam-table th {
+    background-color: #18191e;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.exam-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.exam-table tbody tr:hover {
+    background-color: #faf0f1;
+}
+
+/* Результати перевірки */
+
+.exam-section .result-title {
+    margin-top: 36px;
+}
+
+.exam-result {
+    display: grid;
+    gap: 14px;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border-left: 4px solid #b72f3b;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.event-card h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.event-card p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #777b84;
+}
+
+.event-card .event-warning {
+    color: #b72f3b;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* Телефон */
+
+@media (max-width: 767px) {
+    .exam-section h2 {
+        font-size: 19px;
+    }
+
+    .exam-controls {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .exam-controls input,
+    .exam-controls button {
+        width: 100%;
+    }
+
+    .exam-table {
+        min-width: 550px;
+        font-size: 11px;
+    }
+
+    .exam-table th,
+    .exam-table td {
+        padding: 15px;
+    }
+
+    .event-card {
+        padding: 18px;
+    }
+
+    .event-card h3 {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .event-card p {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Unbounded', sans-serif;
+    background-color: #f2f2f3;
+    color: #25262b;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+
+.header {
+    background-color: #18191e;
+    color: #ffffff;
+    padding: 24px;
+}
+
+.header-content {
+    padding-bottom: 24px;
+}
+
+.header-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 15px;
+    color: #b6b8c0;
+    line-height: 1.6;
+}
+
+.header-content .student {
+    margin-top: 14px;
+    color: #ffffff;
+}
+
+/* Навігація */
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 14px 20px;
+    background-color: #35383f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #b72f3b;
+}
+
+/* Основний вміст */
+
+.main {
+    flex: 1;
+    background-color: #f2f2f3;
+    padding: 24px;
+}
+
+.section-description {
+    font-size: 13px;
+    color: #777b84;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+/* Планшет */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+    .header-content p {
+        font-size: 13px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        padding: 12px 16px;
+    }
+}
+
+/* Телефон */
+
+@media (max-width: 767px) {
+    .header,
+    .main {
+        padding: 20px;
+    }
+
+    .header-content {
+        padding-bottom: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 22px;
+        margin-bottom: 14px;
+        line-height: 1.5;
+    }
+
+    .header-content p {
+        font-size: 11px;
+    }
+
+    .header-content .student {
+        margin-top: 10px;
+    }
+
+    .navigation {
+        gap: 8px;
+    }
+
+    .nav-link {
+        padding: 11px 13px;
+        font-size: 10px;
+    }
+
+    .section-description {
+        font-size: 11px;
+    }
+}
